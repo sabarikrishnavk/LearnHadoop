@@ -18,18 +18,31 @@ public class LogPartitioner extends Partitioner<Text,Text > implements
    */
   public void setConf(Configuration configuration) {
     this.configuration = configuration;
-    months.put("Jan", 0);
-    months.put("Feb", 1);
-    months.put("Mar", 2);
-    months.put("Apr", 3);
-    months.put("May", 4);
-    months.put("Jun", 5);
-    months.put("Jul", 6);
-    months.put("Aug", 7);
-    months.put("Sep", 8);
-    months.put("Oct", 9);
-    months.put("Nov", 10);
-    months.put("Dec", 11);
+//    months.put("Jan", 0);
+//    months.put("Feb", 1);
+//    months.put("Mar", 2);
+//    months.put("Apr", 3);
+//    months.put("May", 4);
+//    months.put("Jun", 5);
+//    months.put("Jul", 6);
+//    months.put("Aug", 7);
+//    months.put("Sep", 8);
+//    months.put("Oct", 9);
+//    months.put("Nov", 10);
+//    months.put("Dec", 11);
+    
+    months.put("01", 0);
+    months.put("02", 1);
+    months.put("03", 2);
+    months.put("04", 3);
+    months.put("05", 4);
+    months.put("06", 5);
+    months.put("07", 6);
+    months.put("08", 7);
+    months.put("09", 8);
+    months.put("10", 9);
+    months.put("11", 10);
+    months.put("12", 11);
   }
 
   /**
