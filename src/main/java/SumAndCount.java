@@ -23,13 +23,11 @@ public class SumAndCount implements Writable {
 		public int getCount() {return count;}
 		public void setCount(int count) {this.count = count;}
 
-		@Override
 		public void readFields(DataInput dataInput) throws IOException {
 		    sum = WritableUtils.readVInt(dataInput);
 		    count = WritableUtils.readVInt(dataInput);      
 		}
 
-		@Override
 		public void write(DataOutput dataOutput) throws IOException {
 		    WritableUtils.writeVInt(dataOutput, sum);
 		    WritableUtils.writeVInt(dataOutput, count);
